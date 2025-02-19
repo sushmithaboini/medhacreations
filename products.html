@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medha Creations - Luxury Gift Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Medha Creations</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+
+            <div class="product-category">
+                <h3>Boxes</h3>
+
+                <div class="product-grid"> 
+                <div class="product">
+                   
+                    <div class="slider" id="krishnaboxSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/lord_krishna_box.jpg" alt="Lord Krishna box">
+                          <h4>Lord Krishna Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lord_krishna_box_2.jpg" alt="Lord Krishna box">
+                          <h4>Lord Krishna Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'krishnaboxSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'krishnaboxSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+                  
+                  <div class="product">
+                  
+                    <div class="slider" id="ganeshboxSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/ganesh_box_image_2.jpg" alt="Lord ganesh Box">
+                          <h4>Lord Ganesh Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/ganesh_box_image.jpg" alt="Lord ganesh Box">
+                          <h4>Lord Ganesh Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'ganeshboxSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'ganeshboxSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+                  
+                  <div class="product">
+                    
+                    <div class="slider" id="lakshmiboxSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/lakshmi1.jpg" alt="vara lakshmi Image 1">
+                          <h4>Lakshmi Devi Box 2</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lakshmi2.jpg" alt="vara lakshmi Image 2">
+                          <h4>Lakshmi Devi Box 2</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lakshmi3.jpg" alt="vara lakshmi box Image 3">
+                          <h4>Lakshmi Devi Box 2s</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'lakshmiboxSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'lakshmiboxSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+                  
+
+                 
+                  
+
+                  <div class="product">
+                    
+                    <div class="slider" id="murganSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/lordmurganbox.jpg" alt="lord murgan box Image 1">
+                          <h4>Lord Murgan Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lordmurganbox2.jpg" alt="lord murgan box Image 2">
+                          <h4>Lord Murgan Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lordmurganbox3.jpg" alt="lord murgan box Image 3">
+                          <h4>Lord Murgan Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'murganSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'murganSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="venkateshwaraSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/venkateshwara.jpg" alt="Tirupati Balaji box Image 1">
+                          <h4>Tirupati Balaji Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/venkateshwara2.jpg" alt="Tirupati Balaji box Image 2">
+                          <h4>Tirupati Balaji Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/venkateshwara3.jpg" alt="Tirupati Balaji box Image 3">
+                          <h4>Tirupati Balaji Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'venkateshwaraSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'venkateshwaraSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="balajiSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/balaji1.jpg" alt="balaji box Image 1">
+                          <h4>Balaji Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/balaji2.jpg" alt="balaji box Image 2">
+                          <h4>Balaji Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/balaji3.jpg" alt="balaji box Image 3">
+                          <h4>Balaji Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/balaji4.jpg" alt="balaji box Image 4">
+                          <h4>Balaji Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'balajiSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'balajiSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="godadeviSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/godadevi (1).jpg" alt="godadevi Box Image 1">
+                          <h4>Goda Devi Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/godadevi (2).jpg" alt="godadevi Box Image 2">
+                          <h4>Goda Devi Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'godadeviSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'godadeviSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="saibabaSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/saibaba.jpg" alt="saibaba Box Image 1">
+                          <h4>Lord Sai Baba Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/saibaba2.jpg" alt="saibaba Box Image 2">
+                          <h4>Lord Sai Baba Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'saibabaSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'saibabaSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+
+                  <div class="product">
+                    
+                    <div class="slider" id="lakshmiSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/lakshmidevibox1.jpg" alt="Lakshmi Devi  box Image 1">
+                          <h4>Lakshmi Devi Box 1</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lakshmidevibox2.jpg" alt="Lakshmi Devi  box Image 2">
+                          <h4>Lakshmi Devi Box 1</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lakshmidevibox3.jpg" alt="Lakshmi Devi  box Image 3">
+                          <h4>Lakshmi Devi Box 1</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/lakshmidevibox4.jpg" alt="Lakshmi Devi  box Image 3">
+                          <h4>Lakshmi Devi Box 1</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'lakshmiSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'lakshmiSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+
+                  
+                  <div class="product">
+                    
+                    <div class="slider" id="pichwaiSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/pichwaicowbox.jpg" alt="pichwaicowbox Image 1">
+                          <h4>Pichwai Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/pichwaicowbox2.jpg" alt="pichwaicowbox Image 2">
+                          <h4>Pichwai Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/pichwaicowbox3.jpg" alt="pichwaicowbox Image 3">
+                          <h4>Pichwai Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'pichwaiSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'pichwaiSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="peacockSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/peacockbox1.jpg" alt="peacock box Image 1">
+                          <h4>Peacock Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/peacockbox2.jpg" alt="peacock box Image 2">
+                          <h4>Peacock Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/peacockbox3.jpg" alt="peacock box Image 3">
+                          <h4>Peacock Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'peacockSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'peacockSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+
+                  <div class="product">
+                    
+                    <div class="slider" id="horseSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/horsebox1.jpg" alt="horse box Image 1">
+                          <h4>Horse Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/horsebox2.jpg" alt="horse box Image 2">
+                          <h4>Horse Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/horsebox3.jpg" alt="horse box Image 3">
+                          <h4>Horse Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'horseSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'horseSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+
+                  <div class="product">
+                    
+                    <div class="slider" id="parrotsSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/parrotbox.jpg" alt="Parrot box Image 1">
+                          <h4>Parrot Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/parrotbox2.jpg" alt="Parrot box Image 2">
+                          <h4>Parrot Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/parrotbox3.jpg" alt="Parrot box Image 3">
+                          <h4>Parrot Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'parrotsSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'parrotsSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="airavataboxSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/airatavabox1.jpg" alt="airavata box Image 1">
+                          <h4>Airavata Box 2</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/airavatabox2.jpg" alt="airavata box Image 2">
+                          <h4>Airavata Box 2</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/airavatabox3.jpg" alt="airavata box Image 3">
+                          <h4>Airavata Box 2</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'airavataboxSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'airavataboxSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="parrotsboxSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/parrot box.jpg" alt="Parrot box Image 1">
+                          <h4>Parrots Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/parrot box2.jpg" alt="Parrot box Image 2">
+                          <h4>Parrots Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/parrot box3.jpg" alt="Parrot box Image 3">
+                          <h4>Parrots Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'parrotsboxSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'parrotsboxSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  <div class="product">
+                    
+                    <div class="slider" id="airavataSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/Airavata (2).jpg" alt="Airavata Box Image 1">
+                          <h4>Airavata Box 1</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/Airavata.jpg" alt="Airavata Box Image 2">
+                          <h4>Airavata Box 1</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'airavataSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'airavataSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  
+
+                  <div class="product">
+                    
+                    <div class="slider" id="workSlider">
+                      <div class="slides">
+                        <div class="slide">
+                          <img src="images/work1.jpg" alt="work box Image 1">
+                          <h4>Work Design  Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/work2.jpg" alt="work box Image 2">
+                          <h4>Work Design  Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/work3.jpg" alt="work box Image 3">
+                          <h4>Work Design  Box</h4>
+                        </div>
+                        <div class="slide">
+                          <img src="images/work4.jpg" alt="work box Image 4">
+                          <h4>Work Design Box</h4>
+                        </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'workSlider')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'workSlider')">&#10095;</button>
+
+                      </div>
+                  </div>
+
+                  
+                  
+
+
+
+
+
+                  <!-- Add more products as needed -->
+                </div>  
+            </div>
+            
+            <div class="product-category">
+              <h3>Trays and coasters</h3>
+
+              <div class="product-grid">
+
+                <div class="product">
+                    
+                  <div class="slider" id="kundanSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/kundanwork.jpg" alt="Kundan Work Tray Image 1">
+                        <h4>Kundan Work Tray</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/kundanwork1.jpg" alt="Kundan Work Tray Image 2">
+                        <h4>Kundan Work Tray</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/kundanwork2.jpg" alt="Kundan Work Tray Image 3">
+                        <h4>Kundan Work Tray</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'kundanSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'kundanSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    
+                  <div class="slider" id="cSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/ct.jpg" alt="Kundan Work Tray Image 1">
+                        <h4>Kundan Work Cow Tray</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/ct2.jpg" alt="Kundan Work Tray Image 2">
+                        <h4>Kundan Work Cow Tray</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/ct3.jpg" alt="Kundan Work Tray Image 3">
+                        <h4>Kundan Work Cow Tray</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'cSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'cSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="pcSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/pichwaicow.jpg" alt="pichwaicow Tray Image 1">
+                        <h4>Pichwai Cow Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/pichwaicow2.jpg" alt="pichwaicow Tray Image 2">
+                        <h4>Pichwai Cow Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/pichwaicow3.jpg" alt="pichwaicow Tray Image 3">
+                        <h4>Pichwai Cow Tray and Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'pcSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'pcSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="lotusSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/lotus (1).jpg" alt="lotus Tray Image 1">
+                        <h4>Blooming Lotus Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/lotus2.jpg" alt="lotus Tray Image 2">
+                        <h4>Blooming Lotus Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/lotus3.jpg" alt="lotus Tray Image 3">
+                        <h4>Blooming Lotus Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/lotus4.jpg" alt="lotus Tray Image 2">
+                        <h4>Blooming Lotus Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/lotus5.jpg" alt="lotus Tray Image 3">
+                        <h4>Blooming Lotus Tray and Coasters</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'lotusSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'lotusSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="roseSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/rosetray.jpg" alt="Rose Tray Image 1">
+                        <h4>Rose Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/rosetray2.jpg" alt="Rose Tray Image 2">
+                        <h4>Rose Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/rosetray3.jpg" alt="Rose Tray Image 3">
+                        <h4>Rose Tray and Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'roseSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'roseSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="buttaSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/butta.jpg" alt="butta Image 1">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/butta2.jpg" alt="butta Image 2">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/butta3.jpg" alt="butta Image 3">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'buttaSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'buttaSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                
+                <div class="product">
+                    
+                  <div class="slider" id="yellowfloralSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/yellowfloral.jpg" alt="bluefloral Tray Image 1">
+                        <h4>Yellow Floral Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/yellowfloral2.jpg" alt="bluefloral Tray Image 2">
+                        <h4>Yellow Floral Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/yellowfloral3.jpg" alt="bluefloral Tray Image 3">
+                        <h4>Yellow Floral Tray and Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'yellowfloralSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'yellowfloralSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="mSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/m (1).jpg" alt="motifs Tray Image 1">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/m (2).jpg" alt="motifs Tray Image 2">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/m (3).jpg" alt="motifs Tray Image 3">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'mSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'mSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="motifsSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/motifs.jpg" alt="motifs Tray Image 1">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/motifs2.jpg" alt="motifs Tray Image 2">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/motifs3.jpg" alt="motifs Tray Image 3">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'motifsSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'motifsSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    
+                  <div class="slider" id="zcSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/zc.jpg" alt="motifs Tray Image 1">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/zc2.jpg" alt="motifs Tray Image 2">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/zc3.jpg" alt="motifs Tray Image 3">
+                        <h4>Zardosi motifs Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'zcSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'zcSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+                
+                
+
+                <div class="product">
+                    
+                  <div class="slider" id="zardosiSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/zardosi.jpg" alt="zardosi Tray Image 1">
+                        <h4>Zardosi motifs Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/zardosi2.jpg" alt="zardosi Tray Image 2">
+                        <h4>Zardosi motifs Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/zardosi3.jpg" alt="zardosi Tray Image 3">
+                        <h4>Zardosi motifs Tray and Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/zardosi4.jpg" alt="zardosi Tray Image 3">
+                        <h4>Zardosi motifs Tray and Coasters</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'zardosiSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'zardosiSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="pSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/p.jpg" alt="motifs Tray Image 1">
+                        <h4>Pearl motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/p1.jpg" alt="motifs Tray Image 2">
+                        <h4>Pearl motifs Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/p2.jpg" alt="motifs Tray Image 3">
+                        <h4>Pearl motifs Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'pSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'pSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="ChandBaliSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/Chand Bali.jpg" alt="Chand Bali Tray Image 1">
+                        <h4>Chand Bali Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/Chand Bali2.jpg" alt="Chand Bali Tray Image 2">
+                        <h4>Chand Bali Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/Chand Bali3.jpg" alt="Chand Bali Tray Image 3">
+                        <h4>Chand Bali Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/Chand Bali4.jpg" alt="Chand Bali Tray Image 3">
+                        <h4>Chand Bali Coasters</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'ChandBaliSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'ChandBaliSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="buttaSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/butta.jpg" alt="butta Image 1">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/butta2.jpg" alt="butta Image 2">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/butta3.jpg" alt="butta Image 3">
+                        <h4>Butta Kammalu Coasters</h4>
+                      </div>
+                      
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'buttaSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'buttaSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+                <!-- Add more products as needed -->
+                </div>
+            </div>
+
+            <div class="product-category">
+              <h3>Wall decor</h3>
+
+              <div class="product-grid">
+                <div class="product">
+                  <div class="slider" id="krishnaSlider">
+                      <div class="slides">
+                          <div class="slide">
+                              <img src="images/lord_krishna.jpg" alt="Lord Krishna Painting">
+                              <h4>Lord Krishna Painting</h4>
+                          </div>
+                          <div class="slide">
+                              <img src="images/lord_krishna_2.jpg" alt="Lord Krishna Painting 2">
+                              <h4>Lord Krishna Painting</h4>
+                          </div>
+                      </div>
+                      <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'krishnaSliderr')">&#10094;</button>
+                      <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'krishnaSlider')">&#10095;</button>
+
+                  </div>
+              </div>
+
+                <!-- Add more products as needed -->
+              </div>
+            </div>
+
+            <div class="product-category">
+              <h3>Potli Bags</h3>
+
+              <div class="product-grid">
+
+
+
+                <div class="product">
+                    
+                  <div class="slider" id="blueSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/blue.jpg" alt="butta Image 1">
+                        <h4>Blue Potli Bag</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/blue2.jpg" alt="butta Image 2">
+                        <h4>Blue Potli Bag</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'blueSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'blueSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="redSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/red (1).jpg" alt="butta Image 1">
+                        <h4>Red Potli Bag</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/red (2).jpg" alt="butta Image 2">
+                        <h4>Red Potli Bag</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'redSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'redSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    
+                  <div class="slider" id="whiteSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/white.jpg" alt="butta Image 1">
+                        <h4>White Potli Bag</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/white2.jpg" alt="butta Image 2">
+                        <h4>White Potli Bag</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'whiteSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'whiteSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    
+                  <div class="slider" id="multiSlider">
+                    <div class="slides">
+                      <div class="slide">
+                        <img src="images/multi.jpg" alt="butta Image 1">
+                        <h4>Multi Color Potli Bag</h4>
+                      </div>
+                      <div class="slide">
+                        <img src="images/multi2.jpg" alt="butta Image 2">
+                        <h4>Multi Color Potli Bag</h4>
+                      </div>
+                    </div>
+                    <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'multiSlider')">&#10094;</button>
+                    <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'multiSlider')">&#10095;</button>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Add more products as needed -->
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="product-category">
+                <h3>Paintings</h3>
+
+                <div class="product-grid">
+                    <div class="product">
+                        <div class="slider" id="shivaSlider">
+                            <div class="slides">
+                                <div class="slide">
+                                    <img src="images/lord_shiva_family_painting.jpg" alt="Lord Shiva Family Painting">
+                                    <h4>Lord Shiva Family Painting</h4>
+                                </div>
+                                <div class="slide">
+                                    <img src="images/lord_shiva_family_painting_2.jpg" alt="Lord Shiva Painting 2">
+                                    <h4>Lord Shiva Family Painting</h4>
+                                </div>
+                            </div>
+                            <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'shivaSlider')">&#10094;</button>
+                            <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'shivaSlider')">&#10095;</button>
+
+                        </div>
+                    </div>
+                    
+                    <div class="product">
+                        <div class="slider" id="ramDarbarSlider">
+                          <div class="slides">
+                            <div class="slide">
+                              <img src="images/ram_darbar_painting.jpg" alt="Ram Darbar Painting">
+                              <h4>Ram Darbar Painting</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div class="slider" id="ganeshSlider">
+                          <div class="slides">
+                            <div class="slide">
+                              <img src="images/lord_ganesh.jpg" alt="Lord ganesh Painting">
+                              <h4>Lord Ganesh Painting</h4>
+                            </div>
+                            <div class="slide">
+                                <img src="images/lord_ganesh_2.jpg" alt="Lord ganesh Painting 2">
+                                <h4>Lord Ganesh Painting</h4>
+                            </div>
+                          </div>
+                          <button class="prev" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;" onclick="changeSlide(-1, 'ganeshSlider')">&#10094;</button>
+                          <button class="next" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px;" onclick="changeSlide(1, 'ganeshSlider')">&#10095;</button>
+
+                        </div>
+                      </div>
+                    <!-- Add more products as needed -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medha Creations. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function changeSlide(n, sliderId) {
+            let slides = document.querySelectorAll(`#${sliderId} .slide`);
+            let currentSlideIndex = Array.from(slides).findIndex(slide => slide.style.display === 'block');
+            
+            slides[currentSlideIndex].style.display = 'none';
+            let newSlideIndex = (currentSlideIndex + n + slides.length) % slides.length;
+            slides[newSlideIndex].style.display = 'block';
+        }
+    
+        document.querySelectorAll('.slides').forEach(slider => {
+            slider.children[0].style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #000; /* Set background color to black */
+  color: #B08D57; /* Set text color to rusty gold */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Header styles */
+header {
+  background: url('images/background-image.png') center/110% no-repeat, #333; /* Adjusted background size */
+  color: #fff;
+  background-color: #f8f8f8;
+  padding: 30px 0;
+  border-bottom: 1px solid #e7e7e7;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  text-align: left;
+  margin: 0;
+  color: #ffffff; 
+
+  font-size: 24px;
+}
+
+
+header nav {
+  text-align: left;
+  margin-top: 10px;
+}
+
+header nav ul {
+ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #ffffff; 
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+
+
+  color:#ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px; 
+}
+
+/* Section styles */
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+  color: #B08D57; /* Set section header color to rusty gold */
+}
+
+section p {
+  text-align: center;
+  color: #B08D57; /* Set paragraph text color to rusty gold */
+}
+
+
+/* Product styles */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none; /* Hide all slides by default */
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev, .next {
+  cursor: pointer;  /* Remove cursor: pointer;  */
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  /* Remove background-color and padding styles */
+  color: #000000;  /* Assuming you want the arrow icons to remain white */
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border: none;  /* No need for border anymore */
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contact form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #333;
+  color: #B08D57; /* Set form input text color to rusty gold */
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #B08D57; /* Set button text color to rusty gold */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #555;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #B08D57; /* Set footer text color to rusty gold */
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
