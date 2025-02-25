@@ -1,282 +1,281 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #000; /* Set background color to black */
-    color: #B08D57; /* Set text color to rusty gold */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #000; /* Set background color to black */
+  color: #B08D57; /* Set text color to rusty gold */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navigation-box {
+  position: fixed; /* Make the navigation box fixed on scroll */
+  top: 0; /* Align it to the top of the page */
+  left: 0; /* Position it to the left side of the page */
+  width: 200px; /* Adjust width as needed */
+  height: 100%; /* Make it span the full height of the page */
+  background-color: #000000; /* Background color */
+  padding-top: 20px;
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+.navigation-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-box li {
+  margin-bottom: 20px;
+}
+
+.navigation-box a {
+  text-decoration: none;
+  color: #B08D57;
+  display: block;
+  padding: 10px;
+}
+
+.navigation-box a:hover {
+  color: #ffffff;
+}
+
+.content {
+  margin-left: 220px; /* Adjust based on the width of the navigation box */
+  padding: 20px;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background: url('images/background-image.png') center/110% no-repeat, #333; /* Adjusted background size */
+  color: #fff;
+  padding: 200px 0;
+  text-align: left;
+  position: relative;
   
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+}
+
+header h1 {
+  text-align: left;
+  margin: 0;
+  color: #ffffff; 
+}
+
+
+header nav {
+  text-align: left;
+  margin-top: 10px;
+}
+
+header nav ul {
   
+  list-style: none;
+  padding: 0;
+
+}
+
+header nav ul li {
   
-  .navigation-box {
-    position: fixed; /* Make the navigation box fixed on scroll */
-    top: 0; /* Align it to the top of the page */
-    left: 0; /* Position it to the left side of the page */
-    width: 200px; /* Adjust width as needed */
-    height: 100%; /* Make it span the full height of the page */
-    background-color: #000000; /* Background color */
-    padding-top: 20px;
-    box-sizing: border-box; /* Ensure padding does not affect the width */
-  }
+  display: inline;
+  margin: 0 10px;
   
-  .navigation-box ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navigation-box li {
-    margin-bottom: 20px;
-  }
-  
-  .navigation-box a {
-    text-decoration: none;
-    color: #B08D57;
-    display: block;
-    padding: 10px;
-  }
-  
-  .navigation-box a:hover {
-    color: #ffffff;
-  }
-  
-  .content {
-    margin-left: 220px; /* Adjust based on the width of the navigation box */
-    padding: 20px;
-  }
-  
-  
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
-  header {
-    background: url('images/background-image.png') center/110% no-repeat, #333; /* Adjusted background size */
-    color: #fff;
-    padding: 200px 0;
-    text-align: left;
-    position: relative;
-    
-  }
-  
-  header h1 {
-    text-align: left;
-    margin: 0;
-    color: #ffffff; 
-  }
+}
+
+header nav ul li a {
+  color: #ffffff; 
+  text-decoration: none;
 
   
-  header nav {
-    text-align: left;
-    margin-top: 10px;
-  }
-  
-  header nav ul {
-    
-    list-style: none;
-    padding: 0;
-  
-  }
-  
-  header nav ul li {
-    
-    display: inline;
-    margin: 0 10px;
-    
-  }
-  
-  header nav ul li a {
-    color: #ffffff; 
-    text-decoration: none;
-  
-    
-  }
-  
-  header nav ul li a:hover {
-    text-decoration: underline;
-  
-  }
-  
-  
-  /* Section styles */
-  section {
-    padding: 20px 0;
-  }
-  
-  section h2 {
-    text-align: center;
-    color: #b88538; /* Set section header color to rusty gold */
-  }
-  
-  section p {
-    text-align: center;
-    color: #E6BE8A; /* Set paragraph text color to rusty gold */
-  }
- 
-  
-  
-  
-  #b88538
-  
-  /* Product styles */
-  .product-grid {
-    margin-left: 150px;
-    display: flex;
-    flex-wrap: wrap;  /* Wrap images on smaller screens */
-  }
-  
-  .product-grid .product {
-    margin: 5px;  /* Add some margin for spacing */
-    flex: 0 0 33.33%; /* Set width to 33.33% for three columns */
-    text-align: center;
-    position: relative;
-  }
-  
-  .product-grid .product img,
-  .product-grid .product img {  /* Target both product and product-grid .product img classes */
-    width: 100%;
-    height: auto;
-  }
-  
-  
-  .product-category {
-    margin-bottom: 30px;
-  }
-  
-  .product-category h3 {
-    color: #B08D57; /* Set product category header color to rusty gold */
-  }
-  
-  .product {
-    display: inline-block;
-    text-align: center;
-    position: relative;  /* Allows image positioning within the product */
-  }
-  
-  .product img,
-  .product-grid .product img {  /* Target both product and product-grid .product img classes */
-    width: 100%;
-    height: auto;
-  }
-  
-  
-  /* Existing product styles... */
-  
-  
-  .product h4 {
-    margin-top: 10px;
-    color: #B08D57; /* Set product title color to rusty gold */
-  }
-  
-  .product a {
-    text-decoration: none; /* Remove underline from product links */
-    color: #B08D57; /* Set link color to old jewelry rusty gold */
-  }
-  
-  .product a:hover {
-    text-decoration: none; /* Ensure underline does not appear on hover */
-  }
-  
-  /* Slider styles */
-  .slider {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: none; /* Hide all slides by default */
-  }
-  
-  .slide img {
-    width: 100%;
-    vertical-align: middle;
-  }
-  
-  .prev, .next {
-    cursor: pointer;  /* Remove cursor: pointer;  */
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    /* Remove background-color and padding styles */
-    color: #000000;  /* Assuming you want the arrow icons to remain white */
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border: none;  /* No need for border anymore */
-    user-select: none;
-  }
-  
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Contact form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #333;
-    color: #B08D57; /* Set form input text color to rusty gold */
-  }
-  
-  form button {
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: #B08D57; /* Set button text color to rusty gold */
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  form button:hover {
-    background: #555;
-  }
-  
-  /* Footer styles */
-  footer {
-    background: #333;
-    color: #B08D57; /* Set footer text color to rusty gold */
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+
+}
+
+
+/* Section styles */
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+  color: #b88538; /* Set section header color to rusty gold */
+}
+
+section p {
+  text-align: center;
+  color: #E6BE8A; /* Set paragraph text color to rusty gold */
+}
+
+
+
+
+#b88538
+
+/* Product styles */
+.product-grid {
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;  /* Wrap images on smaller screens */
+}
+
+.product-grid .product {
+  margin: 5px;  /* Add some margin for spacing */
+  flex: 0 0 33.33%; /* Set width to 33.33% for three columns */
+  text-align: center;
+  position: relative;
+}
+
+.product-grid .product img,
+.product-grid .product img {  /* Target both product and product-grid .product img classes */
+  width: 100%;
+  height: auto;
+}
+
+
+.product-category {
+  margin-bottom: 30px;
+}
+
+.product-category h3 {
+  color: #B08D57; /* Set product category header color to rusty gold */
+}
+
+.product {
+  display: inline-block;
+  text-align: center;
+  position: relative;  /* Allows image positioning within the product */
+}
+
+.product img,
+.product-grid .product img {  /* Target both product and product-grid .product img classes */
+  width: 100%;
+  height: auto;
+}
+
+
+/* Existing product styles... */
+
+
+.product h4 {
+  margin-top: 10px;
+  color: #B08D57; /* Set product title color to rusty gold */
+}
+
+.product a {
+  text-decoration: none; /* Remove underline from product links */
+  color: #B08D57; /* Set link color to old jewelry rusty gold */
+}
+
+.product a:hover {
+  text-decoration: none; /* Ensure underline does not appear on hover */
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none; /* Hide all slides by default */
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev, .next {
+  cursor: pointer;  /* Remove cursor: pointer;  */
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  /* Remove background-color and padding styles */
+  color: #000000;  /* Assuming you want the arrow icons to remain white */
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border: none;  /* No need for border anymore */
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contact form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #333;
+  color: #B08D57; /* Set form input text color to rusty gold */
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #B08D57; /* Set button text color to rusty gold */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #555;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #B08D57; /* Set footer text color to rusty gold */
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
