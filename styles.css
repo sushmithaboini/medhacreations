@@ -55,6 +55,35 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* Section Styles */
 section {
   padding: 50px 0;
@@ -89,7 +118,7 @@ section h2 {
 .slider {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Adjust width as needed */
+  max-width: 500px;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
@@ -105,7 +134,7 @@ section h2 {
 .slide {
   min-width: 100%;
   box-sizing: border-box;
-  display: none; /* Hide all slides except the first */
+  display: none;
 }
 
 .slide img {
@@ -191,7 +220,7 @@ footer {
   }
 
   .product-item {
-    flex: 0 0 50%;
+    width: 100%;
   }
 
   .slider {
@@ -203,6 +232,20 @@ footer {
     height: 30px; 
     font-size: 20px;
   }
+
+  /* Fix for dropdown visibility */
+  .dropdown-content {
+    display: block !important;
+    position: relative;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -211,7 +254,7 @@ footer {
   }
 
   .product-item {
-    flex: 0 0 100%;
+    width: 100%;
   }
 
   header {
