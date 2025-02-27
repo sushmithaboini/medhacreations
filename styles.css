@@ -182,43 +182,53 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
-/* ------------- DROPDOWN MENU STYLES ------------- */
 
-/* The parent list item containing the dropdown */
-.dropdown {
-  position: relative; 
+/* Responsive Design Fixes */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product-item {
+    flex: 0 0 50%;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .prev, .next {
+    width: 30px; 
+    height: 30px; 
+    font-size: 20px;
+  }
 }
 
-/* The main "Products" link */
-.dropbtn {
-  cursor: pointer;
-}
+@media screen and (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-/* The container that holds the subcategory links, hidden by default */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333; /* or #fff if you prefer a white dropdown */
-  min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 999;
-}
+  .product-item {
+    flex: 0 0 100%;
+  }
 
-/* Each link in the dropdown */
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: #fff; /* if background is #333 */
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
+  header {
+    padding: 15px 0;
+  }
 
-/* Hover effect for each link */
-.dropdown-content a:hover {
-  background-color: #575757;
-}
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Show the dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+  nav ul {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
 }
