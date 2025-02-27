@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
         let slides = slider.querySelectorAll(".slide");
         let index = 0;
 
-        // Show first slide
-        slides[index].style.display = "block";
+        // Function to update slide visibility
+        const updateSlides = () => {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? "block" : "none";
+            });
+        };
+
+        // Show first slide initially
+        updateSlides();
 
         let prevButton = slider.querySelector(".prev");
         let nextButton = slider.querySelector(".next");
@@ -12,14 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (prevButton && nextButton) {
             prevButton.addEventListener("click", () => {
                 index = (index - 1 + slides.length) % slides.length;
-                slides.forEach(slide => slide.style.display = "none");
-                slides[index].style.display = "block";
+                updateSlides();
             });
 
             nextButton.addEventListener("click", () => {
                 index = (index + 1) % slides.length;
-                slides.forEach(slide => slide.style.display = "none");
-                slides[index].style.display = "block";
+                updateSlides();
             });
         }
     });
