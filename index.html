@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medha Creations - Luxury Gift Shop</title>
-    <link rel="stylesheet" href="homestyles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medha Creations - Luxury Gift Shop</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Medha Creations</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>Welcome to Medha Creations</h2>
-            <p>Discover luxury gifts crafted with precision and care at Medha Creations. Explore our Tanjore specialty and experience the artistry of our products.</p>
-            <p>At Medha Creations, we take pride in ensuring that every gift is meticulously packaged to perfection, ensuring a delightful experience for both the giver and the receiver.</p>
-            <p>To place an order, please visit our Instagram page and DM us.</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay-content">
+      <div class="hero-top-bar">
+        <h1>Medha Creations</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero-content">
+        <h2>Handcrafted Heritage, Wrapped with Elegance</h2>
+        <p>Luxury Tanjore gift boxes, return gifts, and art pieces designed with tradition, detail, and devotion. Celebrate every moment with Medha Creations.</p>
+        <a href="products.html" class="hero-btn">Explore Our Collection</a>
+      </div>
+    </div>
+    
+  </section>
   
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Medha Creations. Crafted with love & heritage.</p>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Medha Creations. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <script>
-        function changeSlide(n, sliderId) {
-            let slides = document.querySelectorAll(`#${sliderId} .slide`);
-            let currentSlideIndex = Array.from(slides).findIndex(slide => slide.style.display === 'block');
-            
-            slides[currentSlideIndex].style.display = 'none';
-            let newSlideIndex = (currentSlideIndex + n + slides.length) % slides.length;
-            slides[newSlideIndex].style.display = 'block';
-        }
-    
-        document.querySelectorAll('.slides').forEach(slider => {
-            slider.children[0].style.display = 'block';
-        });
-    </script>
 </body>
 </html>

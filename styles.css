@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Open+Sans&display=swap');
+
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #000;
@@ -31,7 +33,8 @@ header .container {
 }
 
 header h1 {
-  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
 }
 
 nav ul {
@@ -46,9 +49,10 @@ nav ul li {
 }
 
 nav ul li a {
+  font-family: 'Playfair Display', serif;
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -64,7 +68,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Hide dropdown by default */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -96,28 +99,36 @@ section {
   text-align: center;
 }
 
+section h2,
+section h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d6a255;
+}
+
 section h2 {
-  color: #B08D57;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.product-item {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.product h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #E6BE8A;
+  margin-top: 10px;
 }
 
 /* Image Slider Fix */
@@ -149,13 +160,13 @@ section h2 {
   display: block;
 }
 
-/* Ensure the first slide is visible */
 .slide:first-child {
   display: block;
 }
 
 /* Navigation Buttons */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -176,38 +187,9 @@ section h2 {
   right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background: rgba(0, 0, 0, 0.8);
-}
-
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: auto;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
-  border: none;
-  background: #333;
-  color: #B08D57;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-form button:hover {
-  background: #555;
 }
 
 /* Footer */
@@ -219,27 +201,13 @@ footer {
 }
 
 /* Responsive Design Fixes */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
   }
+}
 
-  .product-item {
-    width: 100%;
-  }
-
-  .slider {
-    max-width: 100%;
-  }
-
-  .prev, .next {
-    width: 30px; 
-    height: 30px; 
-    font-size: 20px;
-  }
-
-  /* Mobile dropdown fix */
+@media screen and (max-width: 600px) {
   .dropdown-content {
     display: none;
     position: relative;
@@ -261,14 +229,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .product-item {
-    width: 100%;
-  }
-
   header {
     padding: 15px 0;
   }
@@ -286,4 +246,14 @@ footer {
     width: 95%;
     padding: 10px;
   }
+}
+
+/* Offset for fixed header when using anchor links */
+.product-category {
+  scroll-margin-top: 140px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
