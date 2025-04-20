@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medha Creations - Luxury Gift Shop</title>
-    <link rel="stylesheet" href="homestyles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medha Creations - Luxury Gift Shop</title>
+  <link rel="stylesheet" href="homestyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Medha Creations</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For inquiries, please email us at [Gmail ID] or follow us on Instagram.</p>
-            <form action="contact.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay-content">
+      <div class="hero-top-bar">
+        <h1>Medha Creations</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
-  
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Medha Creations. All rights reserved.</p>
+    <main>     
+        <div class="container contact-content">
+          <h2>How to Contact Medha Creations</h2>
+          <p>Medha Creations began with a vision: to preserve timeless Indian heritage and bring it into modern celebrations through premium gifting.</p>
+          <p>To place an order, visit our 
+            <a href="https://www.instagram.com/medha._.creations/" target="_blank" style="color: #FFD700; text-decoration: underline;">Instagram</a> 
+            and send us a DM. Let us help you celebrate beautifully.
+          </p>
         </div>
-    </footer>
-    
-    <script>
-        function changeSlide(n, sliderId) {
-            let slides = document.querySelectorAll(`#${sliderId} .slide`);
-            let currentSlideIndex = Array.from(slides).findIndex(slide => slide.style.display === 'block');
-            
-            slides[currentSlideIndex].style.display = 'none';
-            let newSlideIndex = (currentSlideIndex + n + slides.length) % slides.length;
-            slides[newSlideIndex].style.display = 'block';
-        }
-    
-        document.querySelectorAll('.slides').forEach(slider => {
-            slider.children[0].style.display = 'block';
-        });
-    </script>
+    </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Medha Creations. Crafted with love & heritage.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
