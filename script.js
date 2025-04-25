@@ -71,4 +71,30 @@ document.addEventListener("DOMContentLoaded", () => {
     slides[index].style.display = 'block';
     slider.dataset.index = index;
   };
+
+  // TOUCH SWIPE SUPPORT FOR MOBILE SLIDERS
+  document.querySelectorAll(".slider").forEach(slider => {
+    let startX = 0;
+    let endX = 0;
+
+    slider.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchend", e => {
+      endX = e.changedTouches[0].clientX;
+      let diff = startX - endX;
+
+      if (Math.abs(diff) > 50) {
+        const sliderId = slider.id;
+        if (diff > 0) {
+          // Swipe Left
+          changeSlide(1, sliderId);
+        } else {
+          // Swipe Right
+          changeSlide(-1, sliderId);
+        }
+      }
+    });
+  });
 });
