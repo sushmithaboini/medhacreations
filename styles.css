@@ -295,3 +295,7 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+.dropdown.active .dropdown-content {
+  display: grid !important;
+}
