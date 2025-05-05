@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (diff > 0) {
           // Swipe Left
           changeSlide(1, sliderId);
-          
         } else {
           // Swipe Right
           changeSlide(-1, sliderId);
